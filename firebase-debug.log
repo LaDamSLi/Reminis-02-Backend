@@ -21,3 +21,221 @@ Before we get started, keep in mind:
 
   * You are currently outside your home directory
 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-03-01T11:10:52.071Z] ----------------------------------------------------------------------
+[debug] [2026-03-01T11:10:52.072Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LaDam\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-03-01T11:10:52.073Z] CLI Version:   15.8.0
+[debug] [2026-03-01T11:10:52.073Z] Platform:      win32
+[debug] [2026-03-01T11:10:52.073Z] Node Version:  v24.14.0
+[debug] [2026-03-01T11:10:52.073Z] Time:          Sun Mar 01 2026 12:10:52 GMT+0100 (hora estándar de Europa central)
+[debug] [2026-03-01T11:10:52.073Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\ALVARO\01 - PROYECTOS\APP_MARTA\02-backend
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2026-03-01T11:16:28.738Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-01T11:16:28.738Z] > authorizing via signed-in user (aldemilopez@gmail.com)
+[debug] [2026-03-01T11:16:53.623Z] Checked if tokens are valid: false, expires at: 1772362013271
+[debug] [2026-03-01T11:16:53.623Z] Checked if tokens are valid: false, expires at: 1772362013271
+[debug] [2026-03-01T11:16:53.623Z] > refreshing access token with scopes: []
+[debug] [2026-03-01T11:16:53.624Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-01T11:16:53.624Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-01T11:16:53.786Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-01T11:16:53.786Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-01T11:16:53.790Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-03-01T11:16:53.790Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"reminiscencia-backend"}
+[debug] [2026-03-01T11:16:54.629Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-03-01T11:16:54.629Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"reminiscencia-backend"}
+[debug] [2026-03-01T11:17:43.191Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:43.191Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:43.191Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2026-03-01T11:17:43.191Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"reminiscencia-backend","name":"Reminiscencia-v1"}
+[debug] [2026-03-01T11:17:44.150Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2026-03-01T11:17:44.150Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6332875147060924097"}
+[debug] [2026-03-01T11:17:44.150Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:44.150Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:44.150Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 [none]
+[debug] [2026-03-01T11:17:44.902Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 200
+[debug] [2026-03-01T11:17:44.902Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 {"name":"operations/create_project.global.6332875147060924097"}
+[debug] [2026-03-01T11:17:45.412Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-03-01T11:17:45.413Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:45.413Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:45.413Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 [none]
+[debug] [2026-03-01T11:17:45.583Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 200
+[debug] [2026-03-01T11:17:45.583Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 {"name":"operations/create_project.global.6332875147060924097"}
+[debug] [2026-03-01T11:17:46.594Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-03-01T11:17:46.595Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:46.595Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:46.595Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 [none]
+[debug] [2026-03-01T11:17:46.783Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 200
+[debug] [2026-03-01T11:17:46.783Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6332875147060924097 {"name":"operations/create_project.global.6332875147060924097","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"257302459722","projectId":"reminiscencia-backend","lifecycleState":"ACTIVE","name":"Reminiscencia-v1","createTime":"2026-03-01T11:17:45.260335Z"}}
+[debug] [2026-03-01T11:17:46.784Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:46.784Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:46.784Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/reminiscencia-backend:addFirebase [none]
+[debug] [2026-03-01T11:17:50.241Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/reminiscencia-backend:addFirebase 200
+[debug] [2026-03-01T11:17:50.241Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/reminiscencia-backend:addFirebase {"name":"operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw"}
+[debug] [2026-03-01T11:17:50.241Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:50.241Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:50.241Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw [none]
+[debug] [2026-03-01T11:17:57.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw 200
+[debug] [2026-03-01T11:17:57.846Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw {"name":"operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw"}
+[debug] [2026-03-01T11:17:58.346Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2026-03-01T11:17:58.347Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:58.347Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:17:58.347Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw [none]
+[debug] [2026-03-01T11:18:00.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw 200
+[debug] [2026-03-01T11:18:00.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw {"name":"operations/workflows/NjQzY2E4MjMtYjZjNy00MDg4LWFjNTEtOTEzZTc1ZWQ4NTQw","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"reminiscencia-backend","projectNumber":"257302459722","displayName":"Reminiscencia-v1","name":"projects/reminiscencia-backend","resources":{"hostingSite":"reminiscencia-backend"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: reminiscencia-backend
+[info]    - Project Name: Reminiscencia-v1
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/reminiscencia-backend/overview
+[info] 
+=== Functions Setup
+[debug] [2026-03-01T11:18:00.032Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-01T11:18:00.032Z] > authorizing via signed-in user (aldemilopez@gmail.com)
+[debug] [2026-03-01T11:18:00.033Z] [iam] checking project reminiscencia-backend for permissions ["firebase.projects.get"]
+[debug] [2026-03-01T11:18:00.033Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:00.033Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:00.033Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions [none]
+[debug] [2026-03-01T11:18:00.033Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions  x-goog-user-project=reminiscencia-backend
+[debug] [2026-03-01T11:18:00.033Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-01T11:18:01.340Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions 200
+[debug] [2026-03-01T11:18:01.340Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-01T11:18:01.341Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:01.341Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:01.341Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:01.342Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:01.342Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-03-01T11:18:01.342Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com  x-goog-user-project=reminiscencia-backend
+[debug] [2026-03-01T11:18:01.343Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/runtimeconfig.googleapis.com [none]
+[debug] [2026-03-01T11:18:01.343Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/runtimeconfig.googleapis.com  x-goog-user-project=reminiscencia-backend
+[debug] [2026-03-01T11:18:03.087Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com 200
+[debug] [2026-03-01T11:18:03.087Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-03-01T11:18:03.087Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:03.087Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:03.088Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2026-03-01T11:18:03.088Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com:enable  x-goog-user-project=reminiscencia-backend
+[debug] [2026-03-01T11:18:03.189Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/runtimeconfig.googleapis.com 200
+[debug] [2026-03-01T11:18:03.189Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2026-03-01T11:18:04.380Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2026-03-01T11:18:04.380Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/reminiscencia-backend/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[debug] [2026-03-01T11:18:25.068Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\LaDam\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:508:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1327:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:520:35)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-03-01T11:18:28.668Z] ----------------------------------------------------------------------
+[debug] [2026-03-01T11:18:28.669Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LaDam\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-03-01T11:18:28.669Z] CLI Version:   15.8.0
+[debug] [2026-03-01T11:18:28.669Z] Platform:      win32
+[debug] [2026-03-01T11:18:28.669Z] Node Version:  v24.14.0
+[debug] [2026-03-01T11:18:28.669Z] Time:          Sun Mar 01 2026 12:18:28 GMT+0100 (hora estándar de Europa central)
+[debug] [2026-03-01T11:18:28.669Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\ALVARO\01 - PROYECTOS\APP_MARTA\02-backend
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-03-01T11:18:47.339Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-01T11:18:47.340Z] > authorizing via signed-in user (aldemilopez@gmail.com)
+[debug] [2026-03-01T11:18:47.340Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:47.340Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:47.341Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reminiscencia-backend [none]
+[debug] [2026-03-01T11:18:47.693Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reminiscencia-backend 200
+[debug] [2026-03-01T11:18:47.693Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reminiscencia-backend {"projectId":"reminiscencia-backend","projectNumber":"257302459722","displayName":"Reminiscencia-v1","name":"projects/reminiscencia-backend","resources":{"hostingSite":"reminiscencia-backend"},"state":"ACTIVE","etag":"1_2641edd4-2c6f-4632-a8a6-4d229b11433d"}
+[info] i  Using project reminiscencia-backend (Reminiscencia-v1) . 
+[info] 
+=== Functions Setup
+[debug] [2026-03-01T11:18:47.698Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-01T11:18:47.698Z] > authorizing via signed-in user (aldemilopez@gmail.com)
+[debug] [2026-03-01T11:18:47.699Z] [iam] checking project reminiscencia-backend for permissions ["firebase.projects.get"]
+[debug] [2026-03-01T11:18:47.699Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:47.699Z] Checked if tokens are valid: true, expires at: 1772367412786
+[debug] [2026-03-01T11:18:47.699Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions [none]
+[debug] [2026-03-01T11:18:47.699Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions  x-goog-user-project=reminiscencia-backend
+[debug] [2026-03-01T11:18:47.699Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-01T11:18:47.944Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions 200
+[debug] [2026-03-01T11:18:47.944Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reminiscencia-backend:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2026-03-01T11:19:31.228Z] Running command with virtualenv: command="C:\ALVARO\01 - PROYECTOS\APP_MARTA\02-backend\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2026-03-01T11:19:34.164Z] Error: spawn "C:\ALVARO\01 - PROYECTOS\APP_MARTA\02-backend\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\LaDam\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\LaDam\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\LaDam\AppData\Local\npm-cache\_npx\7750544ccf494d8b\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+[error] 
+[error] Error: An unexpected error has occurred.
